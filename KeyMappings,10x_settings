@@ -123,10 +123,10 @@ Control Shift /:           ToggleComment
 # :                 DuplicateLine
 
 # Delete untill end of the line:
-Control L:                 DeleteTillEndOfTheLine
+Control L:                 DeleteTillEndOfTheLine 
 
 # Insert a new line at the current line
-Control Enter:             InsertLine
+# Control Enter:             InsertLine
 
 # Custom(fz): Go to the beginning of the line
 Control A:                 MoveToLineStart
@@ -463,19 +463,49 @@ Control Shift S:           Search
 # Open Search Panel
 Control Shift F:           Search
 
-####################
-# Custom(fz): Commands
-
 # Insert contextual comments
 Control Shift N:           InsertText("// NOTE(fz): ")
 Control Shift T:           InsertText("// TODO(fz): ")
 Control Shift D:           InsertText("// DEBUG(fz): ")
+Control Shift B:           InsertText("// BUG(fz): ")
+
+# Insert a new line after the current line
+Control Enter:       InsertLineAfter
+
+# Insert a new line after the current line
+Control Shift Enter:       InsertLineAfter
+
+# Move to the previous item in the autocomplete list
+Up:                        AutocompleteUp
+
+# Move to the next item in the autocomplete list
+Down:                      AutocompleteDown
+
+# Page selection up in the autocomplete list
+PageUp:                    AutocompletePageUp
+
+# Page selection down in the autocomplete list
+PageDown:                  AutocompletePageDown
+
+# Move to the previous item in the autocomplete list
+Up:                        AutocompleteUp
+
+# Move to the next item in the autocomplete list
+Down:                      AutocompleteDown
+
+# Page selection up in the autocomplete list
+PageUp:                    AutocompletePageUp
+
+# Page selection down in the autocomplete list
+PageDown:                  AutocompletePageDown
+
+# Submit the current symbol rename
+Enter:                     SubmitRenameSymbol
+
 
 # Move the cursor to the end of the line
-Alt Shift End:             MoveToLineEnd
-
+Alt Shift End:             SelectToLineEnd
 
 # Move the cursor to the start of the line
 Alt Shift Home:            MoveToLineStart
-Control Shift B:           InsertText("// BUG(fz): ")
 

@@ -27,7 +27,8 @@ def InsertText(text):
 #################
 # NOTE(fz): Custom fz commands.
 
-def DeleteTillEndOfTheLine():
+def DeleteToEndOfLineAndSaveToClipboard():
+	# Unlike the DeleteToEndOfLine command, this copies the deleted section to the clipboard
 	x, y = N10X.Editor.GetCursorPos()
 	N10X.Editor.SetSelection((x, y), (len(N10X.Editor.GetLine(y)), y), 0)
 	N10X.Editor.ExecuteCommand("Cut")

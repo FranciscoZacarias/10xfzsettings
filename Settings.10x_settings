@@ -43,6 +43,10 @@ OutputPanelWarningRegex:               \[warning\]
 # Regular expression used to detect error lines in the output panel
 OutputPanelErrorRegex:                 \[error\]
 
+# Save all files when 10x loses focus
+SaveAllOnLoseFocus:                    false
+
+
 # 
 # Fonts
 # 
@@ -168,7 +172,7 @@ ScrollBarMode:                         Standard
 HighlightFindTextInScrollBar:          true
 
 # Highlight the currently selected word in the scroll bar
-HighlightSelectedWordInScrollBar:      false
+HighlightSelectedWordInScrollBar:      true
 
 # Size of the scroll bar highlights
 ScrollBarHighlightSize:                1.0
@@ -202,6 +206,10 @@ Column1Presets:                        *.h,*.hh,*.hpp,*.h++,*.hp,*.hxx,*.inl
 
 # File wildcards for files that should automatically open in column 2. Separated by commas.
 Column2Presets:                        *.bat,*.py
+
+# How to name the window from the workspace (Name, Path)
+WindowTitle:                           Name
+
 
 # 
 # Edit
@@ -308,6 +316,13 @@ AutoFormatBlockComments:               false
 
 # New comment lines will be started with * when AutoFormatBlockComments is enabled
 AutoFormatBlockCommentsNewLines:       true
+
+# True to make the End key update the rectangle select instead of going to the end of each multi-cursor line
+EndKeyUpdatesRectSelect:               true
+
+# Enable colouring of braces and brackets based on depth
+ColorBracesByDepth:                    false
+
 
 # 
 # Perforce
